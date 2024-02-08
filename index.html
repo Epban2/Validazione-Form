@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validazione form La Rocca</title>
+</head>
+
+<body>
+    <h1>Validazione form</h1>
+    <h3 style="padding-top: 20px;">Generalita' utente</h3>
+
+    <table>
+        <form method="post" name="modulo">
+            <tr>
+                <td><b>Nome</b></td>
+                <td><input type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <td><b>Cognome</b></td>
+                <td><input type="text" name="cognome"></td>
+            </tr>
+            <tr>
+                <td><b>Data di nascita</b></td>
+                <td><input type="date" name="nascita" onchange="controllaData()"></td>
+            </tr>
+            <tr>
+                <td><b>Indirizzo</b></td>
+                <td><input type="text" name="indirizzo"></td>
+            </tr>
+            <tr>
+                <td><b>Città</b></td>
+                <td>
+                    <select name="citta">
+                        <option value="" disabled selected>Selezionare città</option> <!--disabilito -->
+                        <option value="Roma">Parma</option>
+                        <option value="Modena">Modena</option>
+                        <option value="Firenze">Firenze</option>
+                        <option value="Bologna">Bologna</option>
+                        <option value="Milano">Milano</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Telefono</b></td>
+                <td><input type="text" name="telefono"></td>
+            </tr>
+
+            <tr>
+                <td><b>Sesso</b></td>
+                <td>
+                    <input type="radio" name="sesso" value="M" checked>M
+                    <input type="radio" name="sesso" value="F">F
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right;">
+                    <input type="button" value="Conferma" onClick="Modulo()">
+                </td>
+            </tr>
+        </form>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<table>
