@@ -12,27 +12,27 @@
     <h3 style="padding-top: 20px;">Generalita' utente</h3>
 
     <table>
-        <form method="post" name="modulo">
+        <form method="post" id="modulo">
             <tr>
-                <td><b>Nome</b></td>
-                <td><input type="text" name="nome"></td>
+                <td>Nome</td>
+                <td><input type="text" id="nome"></td>
             </tr>
             <tr>
-                <td><b>Cognome</b></td>
-                <td><input type="text" name="cognome"></td>
+                <td>Cognome</td>
+                <td><input type="text" id="cognome"></td>
             </tr>
             <tr>
-                <td><b>Data di nascita</b></td>
-                <td><input type="date" name="nascita" value=""></td>
+                <td>Data di nascita</td>
+                <td><input type="date" id="nascita" value=""></td>
             </tr>
             <tr>
-                <td><b>Indirizzo</b></td>
-                <td><input type="text" name="indirizzo"></td>
+                <td>Indirizzo</td>
+                <td><input type="text" id="indirizzo"></td>
             </tr>
             <tr>
-                <td><b>Città</b></td>
+                <td>Città</td>
                 <td>
-                    <select name="citta">
+                    <select id="citta">
                         <option value="" disabled selected>Selezionare città</option> <!--disabilito -->
                         <option value="Roma">Parma</option>
                         <option value="Modena">Modena</option>
@@ -43,15 +43,15 @@
                 </td>
             </tr>
             <tr>
-                <td><b>Telefono</b></td>
-                <td><input type="text" name="telefono"></td>
+                <td>Telefono</td>
+                <td><input type="text" id="telefono"></td>
             </tr>
 
             <tr>
-                <td><b>Sesso</b></td>
+                <td>Sesso</td>
                 <td>
-                    <input type="radio" name="sesso" value="M" checked>M
-                    <input type="radio" name="sesso" value="F">F
+                    <input type="radio" id="sesso" value="M" checked>M
+                    <input type="radio" id="sesso" value="F">F
                 </td>
             </tr>
             <tr>
@@ -61,6 +61,8 @@
             </tr>
         </form>
     </table>
+
+    <h3 id="alert"></h3>
 
     <script src="script.js"></script>
 </body>
